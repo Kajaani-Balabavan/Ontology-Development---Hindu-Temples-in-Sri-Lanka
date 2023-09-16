@@ -1,0 +1,930 @@
+@prefix : <http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils> .
+
+<http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils> rdf:type owl:Ontology ;
+                                                                      rdfs:comment """Group members
+Jubeerathan T - 200277G
+Luxshan T - 200359K
+Sathurgini U - 200591M
+Kajaani B - 200279N"""@en ,
+                                                                                   "Kovils in SriLanka"@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Annual_festival_falls_on
+:Annual_festival_falls_on rdf:type owl:ObjectProperty ,
+                                   owl:TransitiveProperty ;
+                          rdfs:domain :Kovil ;
+                          rdfs:range :Month ;
+                          rdfs:comment "kovil annual festival falls on month"@en .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Celebrates
+:Celebrates rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain :Kovil ;
+            rdfs:range :Religious_Event .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Located_in
+:Located_in rdf:type owl:ObjectProperty ,
+                     owl:TransitiveProperty ;
+            rdfs:domain :Kovil ;
+            rdfs:range :District .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Architecture
+:Architecture rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Kovil ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Creator
+:Creator rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Kovil ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Founded
+:Founded rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Kovil ;
+         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Overview
+:Overview rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Religious_Event ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Reconstructured
+:Reconstructured rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Kovil ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Speciality
+:Speciality rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Kovil ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Spring_Pond
+:Spring_Pond rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Kovil ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Temple_Tree
+:Temple_Tree rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Kovil ;
+             rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Amman_Kovil
+:Amman_Kovil rdf:type owl:Class ;
+             rdfs:subClassOf :Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Anjanajar_Kovil
+:Anjanajar_Kovil rdf:type owl:Class ;
+                 rdfs:subClassOf :Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#District
+:District rdf:type owl:Class ;
+          rdfs:comment """Our scope of this onthology is limited to some districts in Srilanka.
+Matale
+Puttalam
+Mullaithevu
+Ampara
+Nuwara_Eliya
+Mannar
+Jaffna
+Kandy
+Matara
+Batticaloa
+Colombo
+Killinochchi
+Trincomalee
+Monaragala
+We didn't consider other districts.""" .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Festival
+:Festival rdf:type owl:Class ;
+          rdfs:subClassOf :Religious_Event .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kannaki_Amman_Kovil
+:Kannaki_Amman_Kovil rdf:type owl:Class ;
+                     rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kovil
+:Kovil rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Month
+:Month rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Murugan_Kovil
+:Murugan_Kovil rdf:type owl:Class ;
+               rdfs:subClassOf :Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Muttumari_Amman_Kovil
+:Muttumari_Amman_Kovil rdf:type owl:Class ;
+                       rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Nagapoosani_Amman_Kovil
+:Nagapoosani_Amman_Kovil rdf:type owl:Class ;
+                         rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Pathrakali_Amman_Kovil
+:Pathrakali_Amman_Kovil rdf:type owl:Class ;
+                        rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Pillayar_Kovil
+:Pillayar_Kovil rdf:type owl:Class ;
+                rdfs:subClassOf :Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Religious_Event
+:Religious_Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Seetha_Amman_Kovil
+:Seetha_Amman_Kovil rdf:type owl:Class ;
+                    rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Sivan_Kovil
+:Sivan_Kovil rdf:type owl:Class ;
+             rdfs:subClassOf :Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thurkkai_Amman_Kovil
+:Thurkkai_Amman_Kovil rdf:type owl:Class ;
+                      rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Veeramakali_Amman_Kovil
+:Veeramakali_Amman_Kovil rdf:type owl:Class ;
+                         rdfs:subClassOf :Amman_Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Vishnu_Kovil
+:Vishnu_Kovil rdf:type owl:Class ;
+              rdfs:subClassOf :Kovil .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Vratham
+:Vratham rdf:type owl:Class ;
+         rdfs:subClassOf :Religious_Event .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Aadi_Amavasai
+:Aadi_Amavasai rdf:type owl:NamedIndividual ,
+                        :Vratham ;
+               :Overview "a day when children remember their departed parents, notably their late fathers."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Aadi_Pirappu
+:Aadi_Pirappu rdf:type owl:NamedIndividual ,
+                       :Festival ;
+              :Overview """celebrated on the first day of the Tamil month of 'Adi'.
+marks the beginning of monsoon."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Aadi_Pooram
+:Aadi_Pooram rdf:type owl:NamedIndividual ,
+                      :Vratham ;
+             :Overview "day of Goddess Shakti as it is believed that the Goddess herself comes to Earth in this auspicious day, to bless Her devotees."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Ampara
+:Ampara rdf:type owl:NamedIndividual ,
+                 :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#April
+:April rdf:type owl:NamedIndividual ,
+                :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#August
+:August rdf:type owl:NamedIndividual ,
+                 :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Batticaloa
+:Batticaloa rdf:type owl:NamedIndividual ,
+                     :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Chitra_Pournami
+:Chitra_Pournami rdf:type owl:NamedIndividual ,
+                          :Vratham ;
+                 :Overview """a day when children remember their departed parents, notably their late mothers. 
+observed in April fullmoon day."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Colombo
+:Colombo rdf:type owl:NamedIndividual ,
+                  :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#December
+:December rdf:type owl:NamedIndividual ,
+                   :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Diwali
+:Diwali rdf:type owl:NamedIndividual ,
+                 :Festival ;
+        :Overview """Festival of lights.
+celebrates the triumph of light over dark and good over evil.
+held in October"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Eelathu_sithamparam_karaitheevu
+:Eelathu_sithamparam_karaitheevu rdf:type owl:NamedIndividual ,
+                                          :Sivan_Kovil ;
+                                 :Annual_festival_falls_on :December ,
+                                                           :July ,
+                                                           :March ;
+                                 :Celebrates :Aadi_Pooram ,
+                                             :Maha_Sivarathiri ,
+                                             :Panguni_Uththaram ,
+                                             :Thiruvathirai ;
+                                 :Located_in :Jaffna ;
+                                 :Creator "The king Kulakoddan"^^xsd:string ;
+                                 :Speciality "It has 39 feet high temple chariot  consists of the carved out figures of 108 Siva thandavam, 63 images of Saiva saints and 25 forms of Maheswara Moorthams (Godly images) in its five ascending bases of artful architecture."^^xsd:string ;
+                                 :Spring_Pond "paramanantha koopam, sithamirtha vaavi, thurvasha shakaram"^^xsd:string ;
+                                 :Temple_Tree "pipal tree, vanni tree, Mahua tree"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#February
+:February rdf:type owl:NamedIndividual ,
+                   :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Gauri_Vratham
+:Gauri_Vratham rdf:type owl:NamedIndividual ,
+                        :Vratham ;
+               :Overview """21 day long fasting observance which commences on Ashtami (eighth day) of Shukla Paksha in the Tamil month of Purattasi and ends on Amavasya, the main day of Deepawali. 
+Lord Shiva granted Goddess Parvati with his left part and this form of his came to be known as 'Ardhanareeswara'. From that day onwards, this day was observed as Kedar Gowri Vrat as Goddess Gauri herself observed the fast to please Lord Shiva."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Jaffna
+:Jaffna rdf:type owl:NamedIndividual ,
+                 :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#January
+:January rdf:type owl:NamedIndividual ,
+                  :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#July
+:July rdf:type owl:NamedIndividual ,
+               :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#June
+:June rdf:type owl:NamedIndividual ,
+               :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kaddukalai_selva_vinayagar_kovil_kaddukalai
+:Kaddukalai_selva_vinayagar_kovil_kaddukalai rdf:type owl:NamedIndividual ,
+                                                      :Pillayar_Kovil ;
+                                             :Annual_festival_falls_on :March ;
+                                             :Celebrates :Vinayaka_Chaturthi ;
+                                             :Located_in :Kandy ;
+                                             :Creator "Sri kurusami"^^xsd:string ;
+                                             :Founded "17th centuary"^^xsd:string ;
+                                             :Speciality "Pansarathankal"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kailasapilaiyar_kovil
+:Kailasapilaiyar_kovil rdf:type owl:NamedIndividual ,
+                                :Pillayar_Kovil ;
+                       :Celebrates :Vinayaka_Chaturthi ;
+                       :Located_in :Jaffna .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kaluthavalai_Suyambulinga_Pillyar_Kovil
+:Kaluthavalai_Suyambulinga_Pillyar_Kovil rdf:type owl:NamedIndividual ,
+                                                  :Pillayar_Kovil ;
+                                         :Annual_festival_falls_on :June ;
+                                         :Celebrates :Vinayaka_Chaturthi ;
+                                         :Located_in :Batticaloa ;
+                                         :Architecture "Monastic structure"^^xsd:string ;
+                                         :Creator "Vannimai"^^xsd:string ;
+                                         :Speciality "Naturally built sivalingam"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kandy
+:Kandy rdf:type owl:NamedIndividual ,
+                :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kannaki_amman_kovil_vatrapalai
+:Kannaki_amman_kovil_vatrapalai rdf:type owl:NamedIndividual ,
+                                         :Kannaki_Amman_Kovil ;
+                                :Annual_festival_falls_on :May ;
+                                :Located_in :Mullaithevu ;
+                                :Reconstructured "13th, 19th century"^^xsd:string ;
+                                :Speciality """Vaikari pongal,
+lighting oil lamp by sea water"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kanthasuwami_kovil_inuvil
+:Kanthasuwami_kovil_inuvil rdf:type owl:NamedIndividual ,
+                                    :Murugan_Kovil ;
+                           :Annual_festival_falls_on :June ;
+                           :Celebrates :Skanda_Sashthi ,
+                                       :Thaipusam ;
+                           :Located_in :Jaffna ;
+                           :Creator "Thirukkovaloor Perayiramudaiyoon Muthali"^^xsd:string ;
+                           :Founded "13th centuary"^^xsd:string ;
+                           :Reconstructured "1735, 1762"^^xsd:string ;
+                           :Speciality "World biggest mansam"^^xsd:string ;
+                           :Spring_Pond "Kansi theertha well"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Karthikai_Deepam
+:Karthikai_Deepam rdf:type owl:NamedIndividual ,
+                           :Festival ;
+                  :Overview """festival of lights.
+Falling in the month of Kartikkai according to the Tamil Calendar(November).
+observed when our moon is in conjunction with the constellation of Karthigai."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kataragama_Temple
+:Kataragama_Temple rdf:type owl:NamedIndividual ,
+                            :Murugan_Kovil ;
+                   :Located_in :Monaragala ;
+                   :Speciality "Aadi Vel function"^^xsd:string ,
+                               "Worshiped by buddhist too"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Ketheeswaram
+:Ketheeswaram rdf:type owl:NamedIndividual ,
+                       :Sivan_Kovil ;
+              :Annual_festival_falls_on :May ;
+              :Celebrates :Maha_Sivarathiri ;
+              :Located_in :Mannar ;
+              :Architecture "Dravidian architecture"^^xsd:string ;
+              :Founded "before 6th century BC"^^xsd:string ;
+              :Reconstructured "1903 AD"^^xsd:string ;
+              :Speciality """one of the Pancha Ishwarams.
+Ketisvaram temple and the waters of the Palavi tank by its side are heralded in the Saiva work Tevaram in the 6th century CE by Sambandar.
+biggest mahalinga in the Sri Lanka"""^^xsd:string ;
+              :Spring_Pond "Paalavi"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kilinochchi
+:Kilinochchi rdf:type owl:NamedIndividual ,
+                      :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kokkadicholai_Thaanthonrichcharam
+:Kokkadicholai_Thaanthonrichcharam rdf:type owl:NamedIndividual ,
+                                            :Sivan_Kovil ;
+                                   :Annual_festival_falls_on :September ;
+                                   :Celebrates :Maha_Sivarathiri ;
+                                   :Located_in :Batticaloa ;
+                                   :Architecture "tamil architecture"^^xsd:string ;
+                                   :Founded "4th century BC"^^xsd:string ;
+                                   :Speciality "one of the oldest and five most important Kovils in Sri Lanka and it is believed to be one of the two Kovils in Sri Lanka to have naturally built Sivalingam."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Koneswaram
+:Koneswaram rdf:type owl:NamedIndividual ,
+                     :Sivan_Kovil ;
+            :Annual_festival_falls_on :April ;
+            :Celebrates :Maha_Sivarathiri ,
+                        :Navarathiri ;
+            :Located_in :Trincomalee ;
+            :Architecture "Tamil architecture"^^xsd:string ;
+            :Founded "300BC"^^xsd:string ;
+            :Speciality """Koneswaram temple of Kona-ma-malai is mentioned in the Saiva literature Tevaram in the late sixth century A.D. by Thirugnana Sambandar.
+One of the most sacred  Pancha Ishwarams."""^^xsd:string ;
+            :Spring_Pond "Pavanasam"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Krishna_Jayanthi
+:Krishna_Jayanthi rdf:type owl:NamedIndividual ,
+                           :Vratham ;
+                  :Overview "annual Hindu festival that celebrates the birth of Krishna, the eighth avatar of Vishnu."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Kurinsikumaran_kovil_peradeniya
+:Kurinsikumaran_kovil_peradeniya rdf:type owl:NamedIndividual ,
+                                          :Murugan_Kovil ;
+                                 :Celebrates :Navarathiri ,
+                                             :Skanda_Sashthi ,
+                                             :Thaipusam ;
+                                 :Located_in :Kandy ;
+                                 :Creator "Hindu students union, peradeniya"^^xsd:string ;
+                                 :Founded "1966-1968"^^xsd:string ;
+                                 :Speciality "one of the beautiful temple in kandy"^^xsd:string ;
+                                 :Spring_Pond "Mahavali branch river"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Maha_Sivarathiri
+:Maha_Sivarathiri rdf:type owl:NamedIndividual ,
+                           :Vratham ;
+                  :Overview "Maha Shivaratri is an annual festival dedicated to the Hindu god Shiva, and is particularly important in the Shaivism tradition of Hinduism. Unlike most Hindu festivals which are celebrated during the day, the Maha Shivaratri is celebrated at night."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Mahavishnu_kovil_Thimilaitheevu
+:Mahavishnu_kovil_Thimilaitheevu rdf:type owl:NamedIndividual ,
+                                          :Vishnu_Kovil ;
+                                 :Annual_festival_falls_on :May ;
+                                 :Located_in :Batticaloa .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Mamangappillaiyar_kovil_amirthakali
+:Mamangappillaiyar_kovil_amirthakali rdf:type owl:NamedIndividual ,
+                                              :Pillayar_Kovil ;
+                                     :Annual_festival_falls_on :July ;
+                                     :Celebrates :Aadi_Amavasai ,
+                                                 :Vinayaka_Chaturthi ;
+                                     :Located_in :Batticaloa ;
+                                     :Creator "One of the place for doing funeral rites."^^xsd:string ,
+                                              "Raman"^^xsd:string ;
+                                     :Reconstructured "1880"^^xsd:string ;
+                                     :Spring_Pond "Mamanga theertha"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Mandoor_murugan_kovil
+:Mandoor_murugan_kovil rdf:type owl:NamedIndividual ,
+                                :Murugan_Kovil ;
+                       :Annual_festival_falls_on :August ;
+                       :Celebrates :Skanda_Sashthi ;
+                       :Located_in :Batticaloa ;
+                       :Speciality "a special poojai method \"Vaay kaddi poojai seithal\""^^xsd:string ;
+                       :Spring_Pond "Batticaloa vavi"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Mannar
+:Mannar rdf:type owl:NamedIndividual ,
+                 :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#March
+:March rdf:type owl:NamedIndividual ,
+                :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Maruthadi_vinayagar_kovil_manipay
+:Maruthadi_vinayagar_kovil_manipay rdf:type owl:NamedIndividual ,
+                                            :Pillayar_Kovil ;
+                                   :Annual_festival_falls_on :April ;
+                                   :Celebrates :Vinayaka_Chaturthi ;
+                                   :Located_in :Jaffna ;
+                                   :Architecture "Chola thiravidaa architeture"^^xsd:string ;
+                                   :Founded "before 12th centuary"^^xsd:string ;
+                                   :Reconstructured "16th centuary"^^xsd:string ;
+                                   :Speciality "Temple bell which will sounds for 5 minutes without a break once operates"^^xsd:string ;
+                                   :Temple_Tree "Terminalia arjuna"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Maruthanar_Madam_Anjanajar_Kovil
+:Maruthanar_Madam_Anjanajar_Kovil rdf:type owl:NamedIndividual ,
+                                           :Anjanajar_Kovil ;
+                                  :Located_in :Jaffna ;
+                                  :Speciality "72 feet Anjanajar statue"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Matale
+:Matale rdf:type owl:NamedIndividual ,
+                 :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Matara
+:Matara rdf:type owl:NamedIndividual ,
+                 :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Maviddapuram_Kanthaswamy_kovil
+:Maviddapuram_Kanthaswamy_kovil rdf:type owl:NamedIndividual ,
+                                         :Murugan_Kovil ;
+                                :Annual_festival_falls_on :July ;
+                                :Celebrates :Skanda_Sashthi ;
+                                :Located_in :Jaffna ;
+                                :Reconstructured "17th century"^^xsd:string ;
+                                :Speciality "Mathurapuravekavalli's horse face vanished"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#May
+:May rdf:type owl:NamedIndividual ,
+              :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Monaragala
+:Monaragala rdf:type owl:NamedIndividual ,
+                     :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Mullaithevu
+:Mullaithevu rdf:type owl:NamedIndividual ,
+                      :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Munneswaram
+:Munneswaram rdf:type owl:NamedIndividual ,
+                      :Sivan_Kovil ;
+             :Celebrates :Maha_Sivarathiri ,
+                         :Navarathiri ;
+             :Located_in :Puttalam ;
+             :Architecture "Dravidian architecture"^^xsd:string ;
+             :Founded "11th century CE"^^xsd:string ;
+             :Reconstructured "1750"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Muthumariamman_Temple_koththukulam
+:Muthumariamman_Temple_koththukulam rdf:type owl:NamedIndividual ,
+                                             :Muttumari_Amman_Kovil ;
+                                    :Annual_festival_falls_on :June ;
+                                    :Celebrates :Chitra_Pournami ,
+                                                :Karthikai_Deepam ,
+                                                :Navarathiri ,
+                                                :Thiruvathirai ;
+                                    :Located_in :Batticaloa ;
+                                    :Creator "A person from Kalinga"^^xsd:string ;
+                                    :Speciality "the oldest amman kovil in the world"^^xsd:string ;
+                                    :Spring_Pond "Batticaloa vavi"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Naguleswaram
+:Naguleswaram rdf:type owl:NamedIndividual ,
+                       :Sivan_Kovil ;
+              :Annual_festival_falls_on :February ;
+              :Celebrates :Aadi_Amavasai ,
+                          :Maha_Sivarathiri ;
+              :Located_in :Jaffna ;
+              :Architecture "Dravidian architecture"^^xsd:string ;
+              :Creator "Viyayan"^^xsd:string ;
+              :Founded "6th century BCE"^^xsd:string ;
+              :Reconstructured "1878"^^xsd:string ;
+              :Spring_Pond "kanga samuthra sankamam"^^xsd:string ;
+              :Temple_Tree "Babul tree"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Nainativu_Nagapooshani_Amman_Temple
+:Nainativu_Nagapooshani_Amman_Temple rdf:type owl:NamedIndividual ,
+                                              :Nagapoosani_Amman_Kovil ;
+                                     :Annual_festival_falls_on :June ;
+                                     :Celebrates :Aadi_Pooram ;
+                                     :Located_in :Jaffna ;
+                                     :Architecture "Dravidian Architecture"^^xsd:string ;
+                                     :Speciality """daily Annathanam,
+one of 64 shakthi peedam"""^^xsd:string ;
+                                     :Spring_Pond "Sithamirtha Pushkarani"^^xsd:string ;
+                                     :Temple_Tree "vanni maram"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Nallur_Kandaswamy_Kovil
+:Nallur_Kandaswamy_Kovil rdf:type owl:NamedIndividual ,
+                                  :Murugan_Kovil ;
+                         :Annual_festival_falls_on :August ;
+                         :Celebrates :Karthikai_Deepam ,
+                                     :Skanda_Sashthi ,
+                                     :Thaipusam ;
+                         :Located_in :Jaffna ;
+                         :Architecture "Tamil Architecture"^^xsd:string ;
+                         :Creator "'Don Juan' Ragunatha Maapaana Mudaliyar"^^xsd:string ;
+                         :Founded "948"^^xsd:string ;
+                         :Reconstructured "1734"^^xsd:string ;
+                         :Speciality """Poojas happening in fixed time, 
+3 gopurm,
+golden roof"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Navarathiri
+:Navarathiri rdf:type owl:NamedIndividual ,
+                      :Vratham ;
+             :Overview "an annual Hindu festival observed in the honour of the goddess Durga. It spans over nine nights (and ten days)."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#New_Year
+:New_Year rdf:type owl:NamedIndividual ,
+                   :Festival ;
+          :Overview "celebrated on first day of year on the Tamil calendar."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#November
+:November rdf:type owl:NamedIndividual ,
+                   :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Nuwara_Eliya
+:Nuwara_Eliya rdf:type owl:NamedIndividual ,
+                       :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#October
+:October rdf:type owl:NamedIndividual ,
+                  :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Old_Kathiresan_kovil
+:Old_Kathiresan_kovil rdf:type owl:NamedIndividual ,
+                               :Murugan_Kovil ;
+                      :Celebrates :Skanda_Sashthi ;
+                      :Located_in :Colombo .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Panguni_Uththaram
+:Panguni_Uththaram rdf:type owl:NamedIndividual ,
+                            :Vratham ;
+                   :Overview "The day is intended to underline the glory of grahasta dharma (or the married life of a householder). The almighty manifests in the marital state as Uma Maheswara, Sita Rama, and Radha Krishna – despite his changelessness, sans childhood or youth or old age - and is celebrated by devotees. On this day, Goddess Mahalakshmi incarnated on earth from the ocean of milk (after the ocean was churned by the Gods and the demons)."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Panrithalaichiamman_kovil_madduvil
+:Panrithalaichiamman_kovil_madduvil rdf:type owl:NamedIndividual ,
+                                             :Kannaki_Amman_Kovil ;
+                                    :Annual_festival_falls_on :December ;
+                                    :Located_in :Jaffna ;
+                                    :Speciality """Celebrates every Monday in tamil month Panguni,
+celebrates vaikasi pongal"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Pathrakali_amman_kovil_Periyaporativu
+:Pathrakali_amman_kovil_Periyaporativu rdf:type owl:NamedIndividual ,
+                                                :Pathrakali_Amman_Kovil ;
+                                       :Annual_festival_falls_on :September ;
+                                       :Celebrates :Karthikai_Deepam ,
+                                                   :Maha_Sivarathiri ,
+                                                   :Thaipusam ;
+                                       :Located_in :Batticaloa ;
+                                       :Creator "Theivakammiyaar"^^xsd:string ;
+                                       :Speciality "Theemithippu"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Puttalam
+:Puttalam rdf:type owl:NamedIndividual ,
+                   :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Seetha_Amman_Temple
+:Seetha_Amman_Temple rdf:type owl:NamedIndividual ,
+                              :Seetha_Amman_Kovil ;
+                     :Located_in :Nuwara_Eliya ;
+                     :Speciality "the only seetha temple in the world"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Selvasannidhi_Murugan_Kovil
+:Selvasannidhi_Murugan_Kovil rdf:type owl:NamedIndividual ,
+                                      :Murugan_Kovil ;
+                             :Annual_festival_falls_on :August ;
+                             :Celebrates :Karthikai_Deepam ,
+                                         :Skanda_Sashthi ;
+                             :Located_in :Jaffna ;
+                             :Speciality """a special poojai method \"Vaay kaddi poojai seithal\".
+daily Annathanam."""^^xsd:string ;
+                             :Spring_Pond "Thondamanaru"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#September
+:September rdf:type owl:NamedIndividual ,
+                    :Month .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Siddyveram_Kannakai_Amman_kovil
+:Siddyveram_Kannakai_Amman_kovil rdf:type owl:NamedIndividual ,
+                                          :Kannaki_Amman_Kovil ;
+                                 :Located_in :Jaffna ;
+                                 :Speciality """Celebrates every Monday in tamil month Panguni,
+celebrates vaikasi pongal"""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Siththandi_murugan_kovil
+:Siththandi_murugan_kovil rdf:type owl:NamedIndividual ,
+                                   :Murugan_Kovil ;
+                          :Annual_festival_falls_on :August ;
+                          :Celebrates :Karthikai_Deepam ,
+                                      :Skanda_Sashthi ,
+                                      :Thai_Pongal ,
+                                      :Vinayaka_Chaturthi ;
+                          :Located_in :Batticaloa ;
+                          :Creator "One of thurupadai temple in east Sri Lanka"^^xsd:string ,
+                                   "Sikandi"^^xsd:string ;
+                          :Founded "18th centuary"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Skanda_Sashthi
+:Skanda_Sashthi rdf:type owl:NamedIndividual ,
+                         :Vratham ;
+                :Overview """people will fast for six days continuously in order to receive the blessings of the god Muruga.
+Six day of shuklapaksha in the month of Kartike ( October-November) is called Skanda shasti."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Sri_Lakshmi_Narayana_Perumal_Kovil
+:Sri_Lakshmi_Narayana_Perumal_Kovil rdf:type owl:NamedIndividual ,
+                                             :Vishnu_Kovil ;
+                                    :Located_in :Trincomalee ;
+                                    :Speciality "It is painted with blue and shiny gold colour combination and also with wonderful carvings on many golden pillars that held the high dome and colorful sculptures which attracts the approaching devotees. Every Sunday they are providing free lunch (Annathanam) to all devotees."^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Sri_Muththumariyamman_kovil_matale
+:Sri_Muththumariyamman_kovil_matale rdf:type owl:NamedIndividual ,
+                                             :Muttumari_Amman_Kovil ;
+                                    :Annual_festival_falls_on :February ;
+                                    :Located_in :Matale ;
+                                    :Architecture "Dravidan architecture"^^xsd:string ;
+                                    :Creator "Suppaiyapillai"^^xsd:string ;
+                                    :Speciality "108 feets nine steps gopuram"^^xsd:string ;
+                                    :Temple_Tree "Babul tree"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Sri_Ponnambalawaneswaram
+:Sri_Ponnambalawaneswaram rdf:type owl:NamedIndividual ,
+                                   :Sivan_Kovil ;
+                          :Annual_festival_falls_on :March ;
+                          :Celebrates :Maha_Sivarathiri ,
+                                      :Thai_Pongal ;
+                          :Located_in :Colombo ;
+                          :Creator "Ponnambalam Mudaliyar"^^xsd:string ;
+                          :Founded "1857"^^xsd:string ;
+                          :Reconstructured "1905"^^xsd:string ;
+                          :Speciality "fully constructed by granite"^^xsd:string ;
+                          :Spring_Pond "suwarna pushkarani"^^xsd:string ;
+                          :Temple_Tree "pipel tree"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Tenavaram
+:Tenavaram rdf:type owl:NamedIndividual ,
+                    :Sivan_Kovil ,
+                    :Vishnu_Kovil ;
+           :Located_in :Matara ;
+           :Architecture "Dravidian architecture"^^xsd:string ;
+           :Founded "790CE"^^xsd:string ;
+           :Speciality "Known as Thondeswaram, One of the five Ishwarams"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thai_Pongal
+:Thai_Pongal rdf:type owl:NamedIndividual ,
+                      :Festival ;
+             :Overview """harvest festival.
+celebrated in month of January."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thaipusam
+:Thaipusam rdf:type owl:NamedIndividual ,
+                    :Vratham ;
+           :Overview """Commemorates when Parvati gave Murugan a Vel to vanquish Soorapadman and his brothers.
+observed in First Purnima that falls in the Thai month."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thanthamalai_murugan_Kovil
+:Thanthamalai_murugan_Kovil rdf:type owl:NamedIndividual ,
+                                     :Murugan_Kovil ;
+                            :Annual_festival_falls_on :July ;
+                            :Celebrates :Skanda_Sashthi ;
+                            :Located_in :Batticaloa ;
+                            :Speciality "Inthiravizha"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thiru_Murikandy_Pillayar_Temple
+:Thiru_Murikandy_Pillayar_Temple rdf:type owl:NamedIndividual ,
+                                          :Pillayar_Kovil ;
+                                 :Located_in :Kilinochchi .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thiruvathirai
+:Thiruvathirai rdf:type owl:NamedIndividual ,
+                        :Vratham ;
+               :Overview """Celebrates the cosmic dance, Birthday, and Ardhanarishvara form of Lord Shiva.
+In the month of Makaram Thiruvathira Star is celebrated."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Thurkkai_amman_kovil_telliplai
+:Thurkkai_amman_kovil_telliplai rdf:type owl:NamedIndividual ,
+                                         :Thurkkai_Amman_Kovil ;
+                                :Annual_festival_falls_on :August ;
+                                :Celebrates :Karthikai_Deepam ,
+                                            :Maha_Sivarathiri ,
+                                            :Navarathiri ;
+                                :Located_in :Jaffna ;
+                                :Creator "Kathirkamar"^^xsd:string ;
+                                :Founded "18th century"^^xsd:string ;
+                                :Reconstructured "1981"^^xsd:string ;
+                                :Spring_Pond "Thurkka pushkarani"^^xsd:string ;
+                                :Temple_Tree "Mahua tree"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Trincomalee
+:Trincomalee rdf:type owl:NamedIndividual ,
+                      :District .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Ukanthamalai_Murugan_Kovil
+:Ukanthamalai_Murugan_Kovil rdf:type owl:NamedIndividual ,
+                                     :Murugan_Kovil ;
+                            :Annual_festival_falls_on :August ,
+                                                      :July ;
+                            :Celebrates :Skanda_Sashthi ;
+                            :Located_in :Ampara ;
+                            :Speciality "Naturally formed seven excavations and \"Saravana poigai\" - the natural spring"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Vallipuram_Aalwar_Temple
+:Vallipuram_Aalwar_Temple rdf:type owl:NamedIndividual ,
+                                   :Vishnu_Kovil ;
+                          :Annual_festival_falls_on :October ,
+                                                    :September ;
+                          :Celebrates :Diwali ,
+                                      :Krishna_Jayanthi ;
+                          :Located_in :Jaffna ;
+                          :Founded "65 – 109 AC"^^xsd:string ;
+                          :Speciality "Kadal teertham"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Varalakshmi_Vratham
+:Varalakshmi_Vratham rdf:type owl:NamedIndividual ,
+                              :Vratham ;
+                     :Overview """The Varalakshmi Vratam is primarily performed by married women, for their own well-being, and in order to ask the goddess to bless their husbands with health and longevity.
+observed on the Friday before the day of the full moon - Purnima - in the Hindu month of Shravana, which corresponds to the Gregorian months of July – August."""^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Varatharajaperumal_Kovil_vannai
+:Varatharajaperumal_Kovil_vannai rdf:type owl:NamedIndividual ,
+                                          :Vishnu_Kovil ;
+                                 :Annual_festival_falls_on :October ,
+                                                           :September ;
+                                 :Located_in :Jaffna ;
+                                 :Architecture "Dravidian architecture"^^xsd:string ;
+                                 :Creator "pathmasaali seddippillai"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Varatharajaperumal_ponnalai
+:Varatharajaperumal_ponnalai rdf:type owl:NamedIndividual ,
+                                      :Vishnu_Kovil ;
+                             :Annual_festival_falls_on :August ,
+                                                       :December ;
+                             :Celebrates :Diwali ,
+                                         :Navarathiri ;
+                             :Located_in :Jaffna ;
+                             :Creator "Inthiran"^^xsd:string ;
+                             :Speciality "one who devote the god intrinsically cannot get Reincarnationan& go to heaven"^^xsd:string ;
+                             :Spring_Pond "Thiruvadinilai"^^xsd:string .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Veeramakali_amman_kovil_Arasady
+:Veeramakali_amman_kovil_Arasady rdf:type owl:NamedIndividual ,
+                                          :Veeramakali_Amman_Kovil ;
+                                 :Annual_festival_falls_on :July ;
+                                 :Celebrates :Aadi_Pooram ,
+                                             :Navarathiri ;
+                                 :Located_in :Jaffna .
+
+
+###  http://www.semanticweb.org/dell/ontologies/2022/11/SrilankanKovils#Vinayaka_Chaturthi
+:Vinayaka_Chaturthi rdf:type owl:NamedIndividual ,
+                             :Vratham ;
+                    :Overview """Hindu festival commemorating the birth of the Hindu god Ganesha.
+falls between 22 August and 20 September every year."""^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :District
+                :Festival
+                :Kovil
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
