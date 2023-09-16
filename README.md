@@ -15,7 +15,11 @@ Step 6 :- Define facets of the slots
 
 Step 7 :- Create instances
 
+
+
 Group members
+
+Kajaani B - 200279N
 
 Jubeerathan T - 200277G
 
@@ -23,7 +27,6 @@ Luxshan T - 200359K
 
 Sathurgini U - 200591M
 
-Kajaani B - 200279N
 
 
 Install Protege to view the file with owl extension.
